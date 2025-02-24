@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#todo-container {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+#task-input {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    outline: none;
+}
+#add-button {
+    width: 20%;
+    padding: 8px;
+    border: none;
+    background-color: #ff5945;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add-button:hover {
+    background-color: #218838;
+}
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.task-item {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid red;
+}
+.task-item span {
+    flex-grow: 1;
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.remove-button:hover {
+    background-color: #c82333;
+}
+@media (max-width: 500px) {
+    #task-input {
+        width: 70%;
+    }
+    #add-button {
+        width: 25%;
+    }
+}
